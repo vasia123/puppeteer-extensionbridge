@@ -9,7 +9,7 @@
     "compile": "npm run clean && npm run build",
     "clean": "rm -rf dist",
     "prepublishOnly": "npm run compile",
-    "postinstall": "tsc",
+    "postinstall": "tsc --outDir ./dist",
     "format": "prettier --write 'src/**/*.ts' 'test/**/*.ts'",
     "watch": "tsc -w",
     "test": "mocha"
